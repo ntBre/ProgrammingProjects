@@ -73,7 +73,7 @@ the steps described above.
 The basic way to open a file in Python is to use the 'open' function
 as shown below.
 
-<a id="open"/>
+<a id="open"></a>
 
 ```python
 infile = open("input/acetaldehyde.dat", "r")
@@ -129,7 +129,7 @@ name suggests, are a way to repeat an action. As a simple example, we
 can use the Python `for` loop along with the `range` built-in to loop
 5 times and print the number each time.
 
-<a id="for"/>
+<a id="for"></a>
 
 ```python
 for i in range(5):
@@ -212,7 +212,7 @@ you have some experience programming, you might want to define an Atom
 or Molecule class with charge, x, y, and z fields, but we will stick
 with more basic **data structures** for now.
 
-<a id="lists"/>
+<a id="lists"></a>
 
 There are two data structures that we can use here. The first is the
 most commonly-used way to collect multiple things into one, the
@@ -310,7 +310,7 @@ them to integers and floats, respectively since we want to do math on
 them eventually. You'll also see that the first line, which needs to
 be treated a bit differently from the others, is also being printed.
 
-<a id="cond"/>
+<a id="cond"></a>
 
 When you need to make a decision in the code, you use what is called a
 **conditional**. Python's conditional statement is called an `if`
@@ -459,7 +459,7 @@ now, but the latter will become very important for later projects.
 
 <summary>Tutorial</summary>
 
-<a id="with"/>
+<a id="with"></a>
 
 Instead of having separate steps for opening and closing the files,
 Python has a useful construct for this exact scenario called the
@@ -582,7 +582,7 @@ debugging.
 
 </details>
 
-## Step 2: Bond Lengths
+## Part 2: Bond Lengths
 Calculate the interatomic distances using the expression:
 
 <img src="./figures/distances.png" height="40">

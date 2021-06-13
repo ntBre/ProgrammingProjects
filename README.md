@@ -27,7 +27,7 @@ where you will find integrals, molecular geometries and other files to
 use as input to your programs.
 
 # Quantum Chemistry Programming Projects 
- - [Project #1](Project#01/README.md): Molecular Geometry/rotational constant analysis
+ - [Project #1](Project#01): Molecular Geometry/rotational constant analysis
  - [Project #2](https://github.com/CrawfordGroup/ProgrammingProjects/tree/master/Project%2302): Harmonic Vibrational analysis
  - [Project #3](https://github.com/CrawfordGroup/ProgrammingProjects/tree/master/Project%2303): The Hartree-Fock self-consistent field (SCF) procedure.
  - [Project #4](https://github.com/CrawfordGroup/ProgrammingProjects/tree/master/Project%2304): The second-order Moller-Plesset perturbation (MP2) energy.

@@ -43,7 +43,8 @@ how to look for help on the internet and in documentation, so these
 will try to help you know what terms to search for. There will also be
 a Table of Contents below the Summary of each project providing quick
 links to the important concepts introduced in that project to make it
-easier to refer to them later.
+easier to refer to them later. Commands that should be typed at a
+shell in a terminal are prefaced with a `$`, such as `$ pwd`.
 
 Code snippets are divided into two types: Tutorial and Solution. As
 you might guess, the Tutorial blocks include full explanations of the

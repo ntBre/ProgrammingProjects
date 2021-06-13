@@ -41,13 +41,13 @@ output directories in the form of a
 [tar](https://en.wikipedia.org/wiki/Tar_(computing)) archive using the command
 
 ```
-curl -O 'https://raw.githubusercontent.com/ntBre/ProgrammingProjects/master/Project01/files.tar'
+$ curl -O 'https://raw.githubusercontent.com/ntBre/ProgrammingProjects/master/Project01/files.tar'
 ```
 
 you can then extract the files using the command
 
 ```
-tar xvf files.tar
+$ tar xvf files.tar
 ```
 
 You can also copy and paste the files manually from GitHub, but the

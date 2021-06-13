@@ -23,15 +23,15 @@ distribution's package manager. In any case, the installation should
 eventually look something like
 
 ```
-sudo apt install python
+$ sudo apt install python
 ```
 
 where I have chosen the `apt` package manager from Debian-based
-distros somewhat arbitrarily. On Mac that would look like `brew
-install python`, and on FreeBSD `pkg install python`, but the idea is
-the same. Regardless, once you think you have Python installed, open a
-terminal and type `python --version`. Anything starting with a 3
-should be okay, but if you see Python 2.7, try running `python3
+distros somewhat arbitrarily. On Mac that would look like `$ brew
+install python`, and on FreeBSD `$ pkg install python`, but the idea
+is the same. Regardless, once you think you have Python installed,
+open a terminal and type `$ python --version`. Anything starting with
+a 3 should be okay, but if you see Python 2.7, try running `$ python3
 --version`. If you have to use `python3`, just remember that for
 later.
 
@@ -74,9 +74,9 @@ print("Hello, World!")
 
 into your editor and save it. Depending on your editor, there may be
 some built-in ways to run the program, but I will not assume anything
-about your editor. As such, go back to your terminal and type `python
-hello.py`, making sure you are in the same directory as your
+about your editor. As such, go back to your terminal and type `$
+python hello.py`, making sure you are in the same directory as your
 `hello.py` file. This should run the program and print the expected
-message to your screen. Remember to type `python3 hello.py` instead if
-your version check indicated that you needed to earlier. If this
+message to your screen. Remember to type `$ python3 hello.py` instead
+if your version check indicated that you needed to earlier. If this
 worked, you should be ready to move on to the rest of the projects!

@@ -1,23 +1,38 @@
 # Molecular-Geometry-Analysis
-The purpose of this project is to introduce you to fundamental C-language (or C++) programming techniques in the context of a scientific problem, viz. the calculation of the internal coordinates (bond lengths, bond angles, dihedral angles), moments of inertia, and rotational constants of a polyatomic molecule. A concise set of instructions for this project may be found [here](./project1-instructions.pdf).
 
-We thank Dr. Yukio Yamaguchi of the University of Georgia for the original version of this project.
+The purpose of this project is to introduce you to fundamental Python
+programming techniques in the context of a scientific problem, namely
+the calculation of the internal coordinates (bond lengths, bond
+angles, dihedral angles), moments of inertia, and rotational constants
+of a polyatomic molecule.
 
 ## Step 1: Read the Coordinate Data from Input
-The input to the program is the set of Cartesian coordinates of the atoms (in bohr) and their associated atomic numbers. A sample molecule (acetaldehyde) to use as input to the program is:
 
-    7
-    6  0.000000000000     0.000000000000     0.000000000000
-    6  0.000000000000     0.000000000000     2.845112131228
-    8  1.899115961744     0.000000000000     4.139062527233
-    1 -1.894048308506     0.000000000000     3.747688672216
-    1  1.942500819960     0.000000000000    -0.701145981971
-    1 -1.007295466862    -1.669971842687    -0.705916966833
-    1 -1.007295466862     1.669971842687    -0.705916966833
+The input to the program is the set of Cartesian coordinates of the
+atoms (in bohr) and their associated atomic numbers. A sample molecule
+(acetaldehyde) to use as input to the program is:
+
+```
+7
+6  0.000000000000     0.000000000000     0.000000000000
+6  0.000000000000     0.000000000000     2.845112131228
+8  1.899115961744     0.000000000000     4.139062527233
+1 -1.894048308506     0.000000000000     3.747688672216
+1  1.942500819960     0.000000000000    -0.701145981971
+1 -1.007295466862    -1.669971842687    -0.705916966833
+1 -1.007295466862     1.669971842687    -0.705916966833
+```
     
-The first line above is the number of atoms (an integer), while the remaining lines contain the z-values and x-, y-, and z-coordinates of each atom (one integer followed by three double-precision floating-point numbers). This [input file](./input/acetaldehyde.dat) ("acetaldehyde.dat") along with a few other test cases can be found in this repository in the [input directory](./input).
+The first line is the number of atoms, while the remaining lines
+contain the Z-values (atomic charge) and x-, y-, and z-coordinates of
+each atom. This [input file](./input/acetaldehyde.dat) and the other
+test cases can be found in this repository in the [input
+directory](./input).
 
-After downloading the file to your computer (to a file called “geom.dat”, for example), you must open the file, read the data from each line into appropriate variables, and finally close the file.
+After downloading the file to your
+computer (to a file called “geom.dat”, for example), you must open the
+file, read the data from each line into appropriate variables, and
+finally close the file.
 
 - [Hint #1](./hints/hint1-1.md): Opening and closing the file stream
 - [Hint #2](./hints/hint1-2.md): Reading the number of atoms

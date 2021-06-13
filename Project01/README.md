@@ -448,17 +448,23 @@ infile.close()
 
 ### d) Refactoring
 
+Refactoring is what you call it when you restructure existing code
+without affecting its functionality. Just like writing or any other
+creative endeavor, the first draft of a program is unlikely to be very
+nice. As such, you usually want to do some refactoring to make it
+easier to use or faster to run. The first of these is our main concern
+now, but the latter will become very important for later projects.
+
 <details>
 
 <summary>Tutorial</summary>
 
 <a id="with"/>
 
-Refactoring is what you call it when you restructure existing code
-without affecting its functionality. Instead of having separate steps
-for opening and closing the files, Python has a useful construct for
-this exact scenario called the `with` construct. Below is the current
-version of the code with the separate open and close
+Instead of having separate steps for opening and closing the files,
+Python has a useful construct for this exact scenario called the
+`with` construct. Below is the current version of the code with the
+separate open and close
 
 ```python
 infile = open("input/acetaldehyde.dat", "r")
@@ -569,8 +575,10 @@ print(load_atoms("input/acetaldehyde.dat"))
 This may not strike you as much of an improvement, and it did add some
 more lines to type, so it may even seem like a bad thing, but keep in
 mind that you can now load the other two provided input files without
-copying and pasting all your code. In the next subsection on testing,
-we will see another benefit of organizing your code in this way.
+copying and pasting all your code. Encapsulating functionality in
+functions can also help you test small pieces of your code rather than
+running the whole thing at once, which can be very helpful for
+debugging.
 
 </details>
 

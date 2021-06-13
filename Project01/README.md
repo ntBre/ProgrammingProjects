@@ -110,13 +110,13 @@ fairly useless representation of a file object.
 
 <summary>Click to show code</summary>
 
-<a name="for"/>
-
 The first thing I usually do when opening a file is just write a
 simple **loop** to print all of the lines in the file. Loops, as the
 name suggests, are a way to repeat an action. As a simple example, we
 can use the Python `for` loop along with the `range` built-in to loop
 5 times and print the number each time.
+
+<a name="for"/>
 
 ```python
 for i in range(5):

@@ -6,6 +6,10 @@ the calculation of the internal coordinates (bond lengths, bond
 angles, dihedral angles), moments of inertia, and rotational constants
 of a polyatomic molecule.
 
+#### Key concepts
+[Opening files](#open)
+[For loops and range](#for)
+
 ## Part 1: Read the Coordinate Data from Input
 
 The input to the program is the set of Cartesian coordinates of the
@@ -47,9 +51,9 @@ You can also copy and paste the files manually from GitHub, but the
 `tar` approach will be more convenient when the number of files
 increases in later projects.
 
-After somehow getting the files to your computer, you must open the
-file, read the data from each line into appropriate variables, and
-finally close the file. This sounds pretty straightforward, but it
+After somehow getting the files to your computer, you must a) open the
+file, b) read the data from each line into appropriate variables, and
+c) finally close the file. This sounds pretty straightforward, but it
 will introduce us to some important programming constructs. If you
 know some Python, give this a shot on your own. Otherwise, expand the
 code snippets below and type them into your editor of choice. It may
@@ -57,11 +61,137 @@ be tempting to copy and paste, but writing them out by hand will
 better help you remember them in the future. We'll break the task into
 the steps described above.
 
+<a name="open"/>
+
 ### a) Open the file
+
 <details>
+
 <summary>Click to show code</summary>
 
-test
+The basic way to open a file in Python is to use the 'open' function
+as shown below.
+
+```python
+infile = open("input/acetaldehyde.dat", "r")
+```
+
+The first argument is the name of the file we want to open, in this
+case, "acetaldehyde.dat" in our "input" directory. The second argument
+is a character describing how we want to open the file. In this case,
+we use an "r" to stand for "reading" since we just want to read the
+file. if instead we wanted to write a file, this second argument would
+be "w".
+
+The open function returns a "file object", the details of which are
+not particularly important for now. What is important is what happens
+to that file object after we call open. If we were to run only the
+right portion of the line above, `open("input/acetaldehyde.dat",
+"r")`, our file would disappear and we couldn't do anything useful
+with it. Instead, we use the `=` **operator** to **assign** the file
+object to a **variable**. We can then refer to the file object later
+in our program by using this variable, `infile`, which is short for
+input file.
+
+If you want, you can try printing the file object using
+
+```python
+print(infile)
+```
+
+but this will not be very helpful since Python will just print a
+fairly useless representation of a file object.
+
+</details>
+
+### b) Read the data
+
+<details>
+
+<summary>Click to show code</summary>
+
+<a name="for"/>
+
+The first thing I usually do when opening a file is just write a
+simple **loop** to print all of the lines in the file. Loops, as the
+name suggests, are a way to repeat an action. As a simple example, we
+can use the Python `for` loop along with the `range` built-in to loop
+5 times and print the number each time.
+
+```python
+for i in range(5):
+	print(i)
+```
+
+Each time through the loop, the variable `i` will be bound to a value
+from 0 to 4. This is a bit tricky at first since you might think the
+loop would run from 1 to 5, but since arrays, or Python's version
+**lists**, which we will meet shortly, are indexed starting from 0,
+this is actually convenient if unintuitive.
+
+Another convenient fact is that Python file objects are iterable. This
+means you can actually loop over a file directly as shown below.
+
+```python
+for line in infile:
+	print(line)
+```
+
+The choice of name for the variable `line` is arbitrary although
+convenient since we are in fact looping over the lines in the file. If
+you run this code, you will notice that there are extra blank lines
+between each line. This is because Python's default `print` function
+tacks on a newline ('\\n') character to every line of output. To turn
+this off, we can pass the **optional argument**, `end` to the `print`
+function with a value of an empty **string**, giving us
+
+```python
+for line in infile:
+	print(line, end="")
+```
+
+and some nicer output. This brings us to our first mention of **data
+types**. Python does not place a great emphasis on different types of
+data like some languages do, but the different types still exist and
+they have different characteristics. Strings, for example, are
+sequences of characters between quotes. We saw a string with our Hello
+World example, although we did not name it as such. Python refers to
+strings by the abbreviation `str`. Other types of data we will see in
+this project are integers, which are whole numbers without decimal
+parts, such as 1 or 2 or 123456, and floating point numbers, which are
+numbers with decimal parts like 1.0 or 3.14. Python refers to these as
+`int`s and `float`s, respectively.
+
+Something else to note here is a very important aspect of
+Python. Indentation matters, and it matters a lot. Instead of using
+braces to indicate code blocks that are nested inside each other like
+many other languages, Python uses indentation. If you wrote
+
+```python
+# NOTE: WRONG!
+for line in infile:
+print(line)
+```
+
+instead of the correct version we wrote above, you will get an error
+telling you it expected an indented block. More dangerously, if we had
+more than one line that was supposed to be inside the loop, as we will
+later, and you only indented the first line, only that line would be
+printed in the loop. For example,
+
+```python
+for line in infile:
+	print("Hello")
+print(line)
+```
+
+will print the string "Hello" 8 times, followed by the last line of
+the file. Python is also very picky about the type of indentation you
+use. Tabs vs spaces is a so-called "holy war" of computing, much like
+Vim vs Emacs, so I won't tell you which to use. Just pick one and
+stick with it or Python will be very angry with you. A good editor
+will handle the indentation for you, so you may not even know which
+you are using.
 
 </details>
 

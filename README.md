@@ -21,10 +21,27 @@ directory. In each one you will find a `README.md` file like this one
 with instructions and output for you to check your implementation
 against. These projects will also require some input files that will
 be discussed in each project as they become relevant.  These input
-files can be found in the `inputs` directory.  Within `input` there
-are directories for several different molecule/basis-set combinations
+files can be found in the `input` directory. Within `input` there are
+directories for several different molecule/basis-set combinations
 where you will find integrals, molecular geometries and other files to
-use as input to your programs.
+use as input to your programs. There is also a tarball of the inputs
+and outputs in each project directory to make it more convenient to
+download all of the files you need. Downloading and extracting these
+is covered in [Project 1](Project01/README.md). Before Project 1 is
+[Project 0](Project00/README.md), which will help you get set up to
+write and run Python programs. If you already know how to do that,
+skip ahead to Project 1.
+
+# Typographical Conventions
+
+Following the conventions of many other programming tutorials, code
+snippets will be written in `monospace` font, while new keywords will
+be presented in **bold**. Part of being a good programmer is knowing
+how to look for help on the internet and in documentation, so these
+will try to help you know what terms to search for. There will also be
+a Table of Contents below the Summary of each project providing quick
+links to the important concepts introduced in that project to make it
+easier to refer to them later.
 
 # Quantum Chemistry Programming Projects 
  - [Project #0](Project00/README.md): Setting up your programming environment

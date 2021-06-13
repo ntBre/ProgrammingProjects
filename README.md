@@ -10,10 +10,8 @@ the chemistry problems as well as embed more language information
 directly in the tutorial. One of the difficulties of learning to
 program is that the best way to learn is by working on a concrete
 project. The goal of this tutorial then is to offer a substantial,
-quantum chemistry-flavored project to help people learn Python. I also
-hope to place some emphasis on a test-driven development style since
-that should help with the inevitable debugging and on some basics of
-the shell.
+quantum chemistry-flavored project to help people learn Python and
+maybe a few basics of the shell.
 
 # Getting Started
 

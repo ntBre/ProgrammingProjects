@@ -6,7 +6,7 @@ the calculation of the internal coordinates (bond lengths, bond
 angles, dihedral angles), moments of inertia, and rotational constants
 of a polyatomic molecule.
 
-## Step 1: Read the Coordinate Data from Input
+## Part 1: Read the Coordinate Data from Input
 
 The input to the program is the set of Cartesian coordinates of the
 atoms (in bohr) and their associated atomic numbers. A sample molecule
@@ -29,15 +29,41 @@ each atom. This [input file](./input/acetaldehyde.dat) and the other
 test cases can be found in this repository in the [input
 directory](./input).
 
-After downloading the file to your
-computer (to a file called “geom.dat”, for example), you must open the
-file, read the data from each line into appropriate variables, and
-finally close the file.
+Assuming you didn't clone the repository, download the input and
+output directories in the form of a
+[tar](https://en.wikipedia.org/wiki/Tar_(computing)) archive using the command
 
-- [Hint #1](./hints/hint1-1.md): Opening and closing the file stream
-- [Hint #2](./hints/hint1-2.md): Reading the number of atoms
-- [Hint #3](./hints/hint1-3.md): Storing the z-values and the coordinates
-- [Solution](./hints/step1-solution.md)
+```
+curl -O 'https://raw.githubusercontent.com/ntBre/ProgrammingProjects/master/Project01/files.tar'
+```
+
+you can then extract the files using the command
+
+```
+tar xvf files.tar
+```
+
+You can also copy and paste the files manually from GitHub, but the
+`tar` approach will be more convenient when the number of files
+increases in later projects.
+
+After somehow getting the files to your computer, you must open the
+file, read the data from each line into appropriate variables, and
+finally close the file. This sounds pretty straightforward, but it
+will introduce us to some important programming constructs. If you
+know some Python, give this a shot on your own. Otherwise, expand the
+code snippets below and type them into your editor of choice. It may
+be tempting to copy and paste, but writing them out by hand will
+better help you remember them in the future. We'll break the task into
+the steps described above.
+
+### a) Open the file
+<details>
+<summary>Click to show code</summary>
+
+test
+
+</details>
 
 ## Step 2: Bond Lengths
 Calculate the interatomic distances using the expression:

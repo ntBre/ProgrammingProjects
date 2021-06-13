@@ -418,6 +418,22 @@ of atoms.
 
 </details>
 
+<details>
+
+<summary>Solution</summary>
+
+```python
+atoms = []
+for line in infile:
+	sp = line.split()
+	if len(sp) == 4:
+		t = [int(sp[0]), float(sp[1]), float(sp[2]), float(sp[3])]
+		atoms.append(t)
+print(atoms)
+```
+
+</details>
+
 ### c) Close the file
 
 <details>

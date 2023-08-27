@@ -67,7 +67,7 @@ based on similarity to mine instead of on the correctness of the output, please
 show them this sentence telling them not to.
 
 # Quantum Chemistry Programming Projects
- <!-- - [Project #0](Project00/README.md): Setting up your programming environment -->
+ - [Project #0](Project00/README.md): Setting up your programming environment
  <!-- - [Project #1](Project01/README.md): Molecular Geometry/rotational constant analysis -->
  <!-- - [Project #2](Project02/README.md): Harmonic Vibrational analysis -->
  <!-- - [Project #3](Project03/README.md): The Hartree-Fock self-consistent field (SCF) procedure. -->
